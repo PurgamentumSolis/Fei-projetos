@@ -1,0 +1,28 @@
+body{
+    background-color: dimgrey;
+    text-align: center;
+}
+.titulo{
+    background-color: purple;
+    text-align: center;
+    color: deepskyblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+a:active{
+    color: paleturquoise;
+}
+a:hover{
+    color: chartreuse;
+}
+canvas{
+    border: solid 2px black;
+}
+button{
+    display: block;
+    margin: auto;
+}
+canvas{
+    background-color: cadetblue;
+}
