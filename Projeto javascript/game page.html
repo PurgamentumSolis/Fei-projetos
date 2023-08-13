@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ball Bouncer</title>
+    <style>
+        canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+    <link rel="stylesheet" href="game%20page.css">
+</head>
+
+<body>
+<div class="titulo">
+    <h1> Instrucoes abaixo </h1>
+</div>
+<p> Ir ao : </p>
+<a href="home.html">Homepage</a> &nbsp
+<a href="game%20page.html"> Jogo</a> &nbsp
+<a href="dev%20page.html">Sobre o dev</a>
+<br>
+<br>
+<br>
+<button onclick="main()"> Start</button>
+<button onclick="cancelar()"> Cancelar </button>
+<canvas id="canvas" width="600" height="600"> </canvas>
+<script src="game javascript.js"></script>
+<br>
+<br>
+<h2> Como Jogar:</h2>
+<p> Recomendado para dar zoom out ate o jogo couber na tela e aparecer os dois botao</p>
+<p> Quando o botao START for pressionado o jogo iniciara, caso perder um jogo novo iniciara imediatamente apos de mostrar sua pontuacao.<br>
+    O botao CANCELAR vai parar o jogo e sera necessario um refresh na pagina para jogar o jogo</p>
+<p> Movimento :<br> Teclas W e S para mexer os dois bastoes verde para cima e para baixo, A e D para mexer os bastoes vermelhos de direita a esquerda</p>
+<p> O objetivo do jogo e sobreviver com a bola dentro da area azul o maior tempo possivel sem a bola bater nas paredes</p>
+
+</body>
+</html>

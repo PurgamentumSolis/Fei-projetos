@@ -1,0 +1,22 @@
+body{
+    background-color: dimgrey;
+    text-align: center;
+}
+.cabecalho{
+    background-color: purple;
+    text-align: center;
+    color: deepskyblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+}
+a:active{
+    color: paleturquoise;
+}
+a:hover{
+    color: chartreuse;
+}
+.texto{
+    color: ghostwhite;
+    font-size: 15pt;
+}
