@@ -1,0 +1,40 @@
+#!/bin/bash
+#########################
+# COMPILAR
+#########################
+if [ -f EP1.java ]; then
+    javac EP1.java
+    echo "#!/bin/bash" > a.out
+    echo "cat - | java EP1" >> a.out
+    chmod 755 a.out
+elif [ -f EP1.c ]; then
+    gcc -ansi EP1.c
+elif [ -f EP1.cpp ]; then 
+    g++ -ansi EP1.cpp
+else
+    PWD=$(pwd)
+    echo "Nenhum arquivo contendo o código fonte foi encontrado no diretório $PWD"
+    exit
+fi
+
+#########################
+# EXECUTAR TESTES
+#########################
+    COUNTER=0
+    GRADE=0
+    rm -rf ./test 2> /dev/null
+    mkdir test
+    while [ -f ./in/in$COUNTER ]; do
+        touch ./test/out$COUNTER
+	./a.out < ./in/in$COUNTER > ./test/out$COUNTER	
+        DIFF=$(diff -w ./test/out$COUNTER ./out/out$COUNTER) 
+        if [ "$DIFF" == "" ]; then
+            let GRADE=GRADE+1
+	    echo "$COUNTER ok"
+        else 
+            echo "Erro no $COUNTER"
+        fi
+	let COUNTER=COUNTER+1
+    done
+    rm -rf ./test
+    echo "Nota: $GRADE de $COUNTER"

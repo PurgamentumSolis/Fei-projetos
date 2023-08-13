@@ -1,0 +1,10 @@
+* Colocar o arquivo com o seu código fonte no mesmo diretório que este README
+
+* Num terminal navege até este diretório.
+
+* Execute o programa de correção automática:
+
+prompt> ./corretor
+
+
+Sua nota deverá aparecer após os testes.
