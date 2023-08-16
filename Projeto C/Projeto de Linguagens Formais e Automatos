@@ -1,0 +1,23 @@
+O projeto consiste em receber uma palavra padrao, um numero de entrada de palavras complementares e as palavras complementares.
+
+exemplo : 
+          abab         (palavra padrao)
+          4            (numero de entradas de palavras complementares)
+          ab           (palavras complementares abaixo)
+          abababab     
+          baaabbbba
+          a
+
+O programa deve gerar uma tabela mostrando a construcao do automato e se a palavra padaro esta dentro das palavras complementares
+
+exemplo : (abab)
+
+          eps a eps
+          a a ab
+          ab aba eps
+          aba a abab
+          abab abab abab
+          0
+          1
+          0
+          0
